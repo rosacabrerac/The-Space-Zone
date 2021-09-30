@@ -1,39 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/styles.css" rel="stylesheet"></link>
+
+    <link href="/styles/styles.css" rel="stylesheet">
+    </link>
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/"> -->
+    <!-- <link href="styles/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <title>Project - Posiblemente sobre el espacio, vamos a ver (?</title>
+    <title>The Space Zone</title>
 </head>
+
 <body>
     <nav>
-        <ul>
+        <ul class="nav">
             <li><a href="#">INICIO</a></li>
             <li><a href="#">NOVEDADES</a></li>
             <li><a href="#">RECOMENDACIONES</a></li>
             <li><a href="#">GALERÍA</a></li>
             <li><a href="#">CONTACTO</a></li>
+            <li><input type="search" id="searchBar" placeholder="Buscar..." aria-label="Search" /></li>
         </ul>
     </nav>
     <main>
-        <input id="input" type="text">
-        <button onclick="apiRequest()">Buscar</button>
-        <div id="APODimagen"></div>
-        <p id="APODexplicacion"></p>
+        <section id="cabecera">
+
+        </section>
+        <div id="container">
+            <!-- Seccion principal -->
+            <div id="seccionPrincipal">
+                <section id="videoEspacio">
+                    <h1>Terrible video del espacio</h1>
+                </section>
+
+                <section id="novedades">
+                    <h1>Novedades Cool</h1>
+                    <p class="tituloPrincipal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ratione
+                        non!
+                        Sint eligendi excepturi vitae necessitatibus, aliquid explicabo in a voluptate dignissimos? Amet
+                        temporibus dignissimos quisquam fuga omnis odit dolores!</p>
+                    <p class="tituloSecundario">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ratione
+                        non!
+                        Sint eligendi excepturi vitae necessitatibus, aliquid explicabo in a voluptate dignissimos? Amet
+                        temporibus dignissimos quisquam fuga omnis odit dolores!</p>
+                    <p class="parrafoPrincipal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ratione
+                        non!
+                        Sint eligendi excepturi vitae necessitatibus, aliquid explicabo in a voluptate dignissimos? Amet
+                        temporibus dignissimos quisquam fuga omnis odit dolores!</p>
+                    <p class="parrafoSecundario">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ratione
+                        non! Sint eligendi excepturi vitae necessitatibus, aliquid explicabo in a voluptate dignissimos?
+                        Amet temporibus dignissimos quisquam fuga omnis odit dolores!</p>
+                </section>
+
+                <section id="juegos">
+                    <h1>Best Games Ever</h1>
+                </section>
+
+                <section id="libros">
+                    <h1>Lectura de la semana para gente intelectual</h1>
+                </section>
+
+                <div id="fotoDia">
+                </div>
+            </div>
+            <!-- Seccion lateral -->
+            <div id="seccionLateral">
+                <section id="fotoDiaSide">
+                    <p class="parrafoPrincipal">Imagen del dia</p>
+                </section>
+                <section id="juegosSide">
+                    <p class="parrafoPrincipal">Juego del dia</p>
+                </section>
+                <section id="librosSide">
+                    <p class="parrafoPrincipal">Libro del dia</p>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
-        
+
         <div id="footerCopy">
             &copy; Creado por personas ultra geniales, para personas ultra geniales. - 2021
         </div>
     </footer>
-    <script src="script.js"></script>    
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/foto-del-dia.js"></script>
 </body>
+
 </html>
