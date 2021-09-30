@@ -7,13 +7,61 @@
   text-decoration: none;
 }
 
-nav {
+.tituloPrincipal{
+  font-family: "Rubik", sans-serif;
+  color: #bddadb;
+  font-size: large;
+}
+.tituloSecundario{
+  font-family: "Rubik", sans-serif;
+  color: #AF661D;
+  font-size: large;
+}
+.parrafoPrincipal{
+  font-family: "Montserrat", sans-serif;
+  color: rgb(11, 127, 156);
+  font-size : small;
+}
+.parrafoSecundario{
+  font-family: "Montserrat", sans-serif;
+  color: rgb(11, 127, 156);
+  font-size: small;
+}
+
+#container{
+  display: flex;
+}
+
+#seccionPrincipal{
+  width: 83%;
+}
+
+#seccionLateral{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: cadetblue;
+  width: 17%;
+  height: 800px;
+}
+
+#cabecera {
+  height: 800px;
+  width: 100%;
+  background-color: bisque;
+}
+
+/* Comienzo Barra de Navegación*/
+
+.nav {
   font-family: "Rubik", sans-serif;
   font-size: large;
-  height: 50px;
   background-color: #021627;
+  height: 50px;
   align-items: center;
   margin: auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 nav ul {
@@ -27,20 +75,50 @@ nav li {
 nav a {
   color: #bddadb;
   display: block;
-  padding: 15px;
 }
+
+#searchBar {
+  border-radius: 3px;
+  height: 25px;
+  border: #bddadb;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Fin Barra de Navegación*/
 
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
-  background-color: #cc8b86;
+  /* background-color: #cc8b86; */
+  background-color:#021627;
+}
+
+#videoEspacio {
+  height: 300px;
+  background-color: brown;
+}
+
+#novedades {
+  height: 300px;
+  background-color: coral;
+}
+
+#juegos {
+  height: 300px;
+  background-color: cornflowerblue;
+}
+
+#libros {
+  height: 300px;
+  background-color: darkgoldenrod;
 }
 
 footer {
   width: 100%;
   background-color: #021627;
   height: 100px;
-  position: fixed;
+  position: relative;
   bottom: 0px;
 
 }
@@ -57,16 +135,16 @@ footer {
   bottom: 0px;
 }
 
-button {
+/* button {
   cursor: pointer;
 }
 
 .centerImage {
   text-align: center;
   border: black 4px solid;
-}
+} */
 
-#APODimagen {
+/* #APODimagen {
   display: block;
   text-align: center;
   margin-left: auto;
@@ -75,4 +153,7 @@ button {
 
 #APODtituloDeImagen {
   text-align: center;
-}
+  color: #bddadb;
+} */
+
+
