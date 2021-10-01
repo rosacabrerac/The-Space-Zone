@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik:wght@600&display=swap"
         rel="stylesheet">
+
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
@@ -23,18 +25,32 @@
 
 <body>
     <nav>
+        <!-- <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label> -->
+        <!-- <label class="logo">The Space Zone</label> -->
         <ul class="nav">
             <li><a href="#">INICIO</a></li>
             <li><a href="#">NOVEDADES</a></li>
             <li><a href="#">RECOMENDACIONES</a></li>
             <li><a href="#">GALERÍA</a></li>
             <li><a href="#">CONTACTO</a></li>
-            <li><input type="search" id="searchBar" placeholder="Buscar..." aria-label="Search" /></li>
+            <!-- <li><input type="search" id="searchBar" placeholder="Buscar..." aria-label="Search"></li> -->
         </ul>
     </nav>
     <main>
+        <button onclick="apiRequest()" class="btn btn-primary">fetch</button>
         <section id="cabecera">
-
+            <div class="text-center">
+                
+                <!-- mover a foto del dia y hacer responsive
+                     Animacion para que quede superpuesto a la pagina html
+                     Sombra (?)   
+                -->
+                <div id="fotoDia">
+                </div>
+            </div>
         </section>
         <div id="container">
             <!-- Seccion principal -->
@@ -70,8 +86,6 @@
                     <h1>Lectura de la semana para gente intelectual</h1>
                 </section>
 
-                <div id="fotoDia">
-                </div>
             </div>
             <!-- Seccion lateral -->
             <div id="seccionLateral">
