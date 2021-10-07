@@ -25,12 +25,12 @@
 
 <body>
     <nav>
-        <!-- <input type="checkbox" id="check">
+        <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
-        </label> -->
-        <!-- <label class="logo">The Space Zone</label> -->
-        <ul class="nav">
+        </label>
+        <label class="logo">The Space Zone</label>
+        <ul>
             <li><a href="#">INICIO</a></li>
             <li><a href="#">NOVEDADES</a></li>
             <li><a href="#">RECOMENDACIONES</a></li>
@@ -40,10 +40,10 @@
         </ul>
     </nav>
     <main>
-        <button onclick="apiRequest()" class="btn btn-primary">fetch</button>
+        <!-- <button onclick="apiRequest()" class="btn btn-primary">fetch</button> -->
         <section id="cabecera">
             <div class="text-center">
-                
+
                 <!-- mover a foto del dia y hacer responsive
                      Animacion para que quede superpuesto a la pagina html
                      Sombra (?)   
@@ -65,39 +65,48 @@
                         non!
                         Sint eligendi excepturi vitae necessitatibus, aliquid explicabo in a voluptate dignissimos? Amet
                         temporibus dignissimos quisquam fuga omnis odit dolores!</p>
-                    <p class="tituloSecundario">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ratione
-                        non!
-                        Sint eligendi excepturi vitae necessitatibus, aliquid explicabo in a voluptate dignissimos? Amet
-                        temporibus dignissimos quisquam fuga omnis odit dolores!</p>
-                    <p class="parrafoPrincipal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ratione
-                        non!
-                        Sint eligendi excepturi vitae necessitatibus, aliquid explicabo in a voluptate dignissimos? Amet
-                        temporibus dignissimos quisquam fuga omnis odit dolores!</p>
+                </section>
+
+                <section id="juegos">
+                    <h1>Best Games Ever</h1>
                     <p class="parrafoSecundario">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ratione
                         non! Sint eligendi excepturi vitae necessitatibus, aliquid explicabo in a voluptate dignissimos?
                         Amet temporibus dignissimos quisquam fuga omnis odit dolores!</p>
                 </section>
 
-                <section id="juegos">
-                    <h1>Best Games Ever</h1>
-                </section>
-
                 <section id="libros">
                     <h1>Lectura de la semana para gente intelectual</h1>
+                    <p class="parrafoPrincipal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ratione
+                        non!
+                        Sint eligendi excepturi vitae necessitatibus, aliquid explicabo in a voluptate dignissimos? Amet
+                        temporibus dignissimos quisquam fuga omnis odit dolores!</p>
                 </section>
 
             </div>
             <!-- Seccion lateral -->
             <div id="seccionLateral">
-                <section id="fotoDiaSide">
-                    <p class="parrafoPrincipal">Imagen del dia</p>
-                </section>
-                <section id="juegosSide">
-                    <p class="parrafoPrincipal">Juego del dia</p>
-                </section>
-                <section id="librosSide">
-                    <p class="parrafoPrincipal">Libro del dia</p>
-                </section>
+                    <section id="fotoDiaSide">
+                        <p class="parrafoPrincipal">Juego del dia</p>
+                        <!-- Trigger/Open The Modal -->
+                        <a id="abrirModal"><img src="img/PhotoGrid_1563936763840.jpg" style="width:100%"></a>
+    
+                        <!-- The Modal -->
+                        <div id="modalAPOD" class="modal">
+    
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span id="cerrarModal">&times;</span>
+                                <img src="img/PhotoGrid_1563936763840.jpg" alt="" style="width:100%">
+                            </div>
+    
+                        </div>
+                    </section>
+                    <section id="juegosSide">
+                        <p class="parrafoPrincipal">Juego del dia</p>
+                    </section>
+                    <section id="librosSide">
+                        <p class="parrafoPrincipal">Libro del dia</p>
+                    </section>
             </div>
         </div>
     </main>
@@ -108,6 +117,7 @@
         </div>
     </footer>
     <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/modal.js"></script>
     <script src="js/foto-del-dia.js"></script>
 </body>
 
