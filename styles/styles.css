@@ -1,11 +1,130 @@
 * {
-  text-indent: 0px;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+  /* text-indent: 0; */
+  margin: 0;
+  padding: 0;
+  border: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  background-color:#021627;
+}
+
+/* Comienzo Barra de Navegación*/
+
+nav {
+  font-family: "Rubik", sans-serif;
+  background-color: #021627;
+  height: 80px;
+  width: 100%;
+  /* align-items: center; */
+  /* margin: auto;
+  display: flex;
+  justify-content: space-evenly; */
+}
+
+label.logo {
+  color: #bddadb;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 10px 0 10px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+
+}
+
+nav ul li a {
+  color: #bddadb;
+  font-size: large;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+nav a:hover {
+  background: #2E294E;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #bddadb;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 900px){
+  label.logo {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 80%;
+    /* height: 100vh; */
+    background: #2E294E;
+    top: 80px;
+    left: -100%;
+    margin-left: 10%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 1;
+    border-radius: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a{
+      font-size: 20px;
+  }
+
+  a:hover,a.active {
+      background: none;
+      color: #021627;
+  }
+
+  #check:checked ~ ul {
+      left: 0;
+  }
+
+}
+
+/* Fin Barra de Navegación*/
 
 .tituloPrincipal{
   font-family: "Rubik", sans-serif;
@@ -32,6 +151,14 @@
   display: flex;
 }
 
+#cabecera {
+  height: 500px;
+  /* width: 100%; */
+  background-color: #ffe4c4;
+  border-radius: 10px;
+  margin: 0 5px 0 15px;
+}
+
 #seccionPrincipal{
   width: 83%;
 }
@@ -39,113 +166,83 @@
 #seccionLateral{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  background-color: cadetblue;
+  justify-content: flex-start;
+  /* background-color: cadetblue; */
   width: 17%;
   height: 800px;
+  position: sticky;
+  top: 20px;
+  margin: 20px 5px 20px 20px;
+  /* padding: 10px; */
+  border-radius: 10px;
 }
 
-#cabecera {
-  height: 800px;
-  width: 100%;
-  background-color: bisque;
+#fotoDiaSide {
+  background-color: cadetblue;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  /* height: 266px; */
 }
 
-/* Comienzo Barra de Navegación*/
-
-.nav {
-  font-family: "Rubik", sans-serif;
-  font-size: large;
-  background-color: #021627;
-  height: 50px;
-  /* align-items: center; */
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
+#juegosSide {
+  background-color: cadetblue;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 266px;
 }
 
-nav ul li {
-  display: inline-block;
-  line-height: 50px;
-
+#librosSide {
+  background-color: cadetblue;
+  padding: 10px;
+  border-radius: 10px;
+  height: 266px;
 }
 
-nav a {
-  color: #bddadb;
-  display: block;
-}
-
-#searchBar {
-  border-radius: 3px;
-  height: 25px;
-  border: #bddadb;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* .checkbtn {
-  font-size: 30px;
-  color: #bddadb;
-  float: right;
-  line-height: 50px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
-#check {
-  display: none;
-}
-
-@media (max-width: 925px) {
-  nav ul li a {
-    font-size: 16px;
-  }
-};
-
-@media (max-width: 858px) {
-  .checkbtn {
-    display: block;
-  }
-
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #2E294E;
-    top: 80px;
-    left: 0;
-    text-align: center;
-  }
-}; */
-/* Fin Barra de Navegación*/
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  /* background-color: #cc8b86; */
-  background-color:#021627;
-}
+/* Comienzo Sección Principal */
 
 #videoEspacio {
   height: 300px;
   background-color: brown;
+  margin: 20px;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 2px;
 }
 
 #novedades {
   height: 300px;
   background-color: coral;
+  margin: 20px;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 2px;
 }
 
 #juegos {
   height: 300px;
   background-color: cornflowerblue;
+  margin: 20px;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 2px;
 }
 
 #libros {
   height: 300px;
   background-color: darkgoldenrod;
+  margin: 20px;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 2px;
 }
+
+/* Fin Sección Principal */
 
 footer {
   width: 100%;
@@ -174,25 +271,60 @@ footer {
   object-fit: cover;
 }
 
-/* button {
+.imagenAPODhd {
+  text-align: center;
+  width: 100%;
+  border: black 4px solid;
+}
+
+#modalAPOD {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+/* The Close Button */
+#cerrarModal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#cerrarModal:hover,
+#cerrarModal:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.centerImage {
-  text-align: center;
-  border: black 4px solid;
-} */
-
-/* #APODimagen {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+#abrirModal {
+  cursor: pointer;
 }
 
-#APODtituloDeImagen {
-  text-align: center;
-  color: #bddadb;
-} */
+/* sidebar */
+::-webkit-scrollbar {
+  width: 15px;
+}
 
-
+::-webkit-scrollbar-thumb {
+  background: linear-gradient( rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
+  border-radius: 7px;
+}

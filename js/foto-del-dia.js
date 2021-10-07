@@ -13,10 +13,9 @@ async function apiRequest() {
     fotoDia(data);
   }
 };
-// });
 
 function fotoDia(data) {
   document.getElementById("fotoDia").innerHTML = `
   <p id="APODtituloDeImagen">La imagen del dia de hoy es: </p>
-  <img class="centerImage" id="imagenAPODhd" style="max-width:100%;height:auto;" src="${data.hdurl}">`;
+  <img class="centerImage" id="imagenAPODhd" src="${data.url}">`;
 };
