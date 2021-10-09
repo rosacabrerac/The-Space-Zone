@@ -138,7 +138,7 @@ nav a:hover {
 }
 .parrafoPrincipal{
   font-family: "Montserrat", sans-serif;
-  color: rgb(11, 127, 156);
+  color: rgb(6, 41, 49);
   font-size : small;
 }
 .parrafoSecundario{
@@ -212,25 +212,124 @@ nav a:hover {
   margin-right: 2px;
 }
 
+/* Comienzo Novedades */
+
 #novedades {
   height: 300px;
-  background-color: coral;
+  /* background-color: coral; */
   margin: 20px;
   margin-left: 15px;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 10px;
   margin-right: 2px;
+  display: flex;
 }
 
-#juegos {
+.novedad {
+  padding: 10px 0px 3px 10px;
+  height: 100%;
+  width: 30%;
+  background-color: aqua;
+  margin-left: -5px;
+  border-radius: 5px;
+  background: linear-gradient(90deg,#133655,#021627);
+}
+
+.novedad:first-child {
+  margin-left: 1px;
+}
+
+.novedad:hover {
+  transform: translate(-10px, -10px);
+}
+
+.novedad h3 {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.novedad p {
+  color: silver;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+/* Fin Novedades */
+
+/* Comienzo Juegos */
+
+#pelis {
   height: 300px;
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   margin: 20px;
   margin-left: 15px;
-  padding: 10px;
   border-radius: 10px;
   margin-right: 2px;
+  display: flex;
 }
+
+.movies {
+  padding: 10px 0px 3px 10px;
+  height: 100%;
+  width: 30%;
+  margin-left: -5px;
+  border-radius: 5px;
+  background: linear-gradient(90deg,#133655,#021627);
+}
+
+.movies:first-child {
+  margin-left: 1px;
+}
+
+.movies:hover {
+  transform: translate(-10px, -10px);
+}
+
+.movies h3 {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.movies img {
+  height: 100%;
+  width: 90%;
+  /* margin: auto; */
+}
+
+#nombrePeli {
+  position: bottom;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  
+}
+
+#containerPeli:hover #nombrePeli {
+  opacity: 0.8;
+}
+
+#estiloNombrePeli {
+  color: #021627;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: steelblue;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+/* Fin Juegos */
 
 #libros {
   height: 300px;
@@ -250,7 +349,6 @@ footer {
   height: 100px;
   position: relative;
   bottom: 0px;
-
 }
 
 #footerCopy {
@@ -317,6 +415,11 @@ footer {
 
 #abrirModal {
   cursor: pointer;
+}
+
+#abrirModal img {
+  border-radius: 5px;
+  margin-top: 3px;
 }
 
 /* sidebar */
