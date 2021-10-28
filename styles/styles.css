@@ -263,6 +263,10 @@ nav a:hover {
   .novedad {
     min-width: 30%;
   }
+
+  .novedad p {
+    font-size: 2.3vw;
+  }
 }
 
 /* Fin Novedades */
@@ -346,6 +350,7 @@ nav a:hover {
   }
 
   .movies {
+    /* scroll-snap-align: start; */
     min-width: 30%;
     height: 100%;
   }
