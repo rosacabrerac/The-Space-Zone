@@ -252,11 +252,22 @@ nav a:hover {
   color: silver;
   font-size: 14px;
   padding-right: 5px;
+
+}
+
+@media (max-width: 900px) {
+  #novedades {
+    overflow-x: auto;
+  }
+
+  .novedad {
+    min-width: 30%;
+  }
 }
 
 /* Fin Novedades */
 
-/* Comienzo Juegos */
+/* Comienzo Películas */
 
 #pelis {
   height: 300px;
@@ -285,15 +296,15 @@ nav a:hover {
   transform: translate(-10px, -10px);
 }
 
-.movies h3 {
+/* .movies h3 {
   margin-bottom: 5px;
   color: white;
-}
+} */
 
 .movies img {
-  height: 100%;
-  width: 90%;
-  /* margin: auto; */
+  width: 180px;
+  height: 280px;
+  /* object-fit: contain; */
 }
 
 #nombrePeli {
@@ -329,7 +340,23 @@ nav a:hover {
   padding: 3px;
 }
 
-/* Fin Juegos */
+@media (max-width: 1200px) {
+  #pelis {
+    overflow-x: auto;
+  }
+
+  .movies {
+    min-width: 30%;
+    height: 100%;
+  }
+
+  .movies img {
+    height: 100%;
+  }
+
+}
+
+/* Fin Películas */
 
 #libros {
   height: 300px;

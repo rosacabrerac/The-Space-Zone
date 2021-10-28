@@ -5,7 +5,11 @@ var cerrarModal = document.getElementById("cerrarModal");
 abrirModal.onclick = function (){
     modalAPOD.style.display="block";
     
+    document.getElementById("imagenmodal").src="${data.url}"
 }
+
+
+/* <img src="${data.url}" alt="" style="width:100%"> */
 
 cerrarModal.onclick = function (){
     modalAPOD.style.display="none";
