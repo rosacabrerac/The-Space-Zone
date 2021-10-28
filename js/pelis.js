@@ -61,13 +61,9 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     });
 
-
     // await fetch('https://raw.githubusercontent.com/rosacabrerac/The-Space-Zone/main/pelis.json')
     // .then(response => response.json())
     // .then(data => console.log(data))
     // .catch(err => console.error(err));
-
-
-    
 
 });
